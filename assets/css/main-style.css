@@ -1,0 +1,477 @@
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 400;
+    src: url('fonts/dm-sans/DMSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 500;
+    src: url('fonts/dm-sans/DMSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 600;
+    src: url('fonts/dm-sans/DMSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSans';
+    font-weight: 700;
+    src: url('fonts/dm-sans/DMSans-Bold.ttf') format('truetype');
+}
+
+* {
+    font-family: "DMSans", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --dodgerblue: #1d9bf0;
+}
+
+.logo-color {
+    color: var(--dodgerblue);
+}
+
+.read:hover {
+    color: #1d9bf0;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+#floating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(31, 53, 103, 1.00);
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 99999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#floating-button:hover {
+    background: #1d9bf0;
+}
+
+.plus {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.bx {
+    cursor: pointer;
+}
+
+.custom-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.legend-container {
+    margin-right: 40px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.status-container {
+    margin-left: 20px;
+}
+
+
+.text-blue {
+    color: var(--blue) !important;
+}
+
+.text-indigo {
+    color: var(--indigo) !important;
+}
+
+.text-purple {
+    color: var(--purple) !important;
+}
+
+.text-pink {
+    color: var(--pink) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+.text-orange {
+    color: var(--orange) !important;
+}
+
+.text-yellow {
+    color: var(--yellow) !important;
+}
+
+.text-green {
+    color: var(--green) !important;
+}
+
+.text-teal {
+    color: var(--teal) !important;
+}
+
+.text-cyan {
+    color: var(--cyan) !important;
+}
+
+.text-dodgerblue {
+    color: var(--dodgerblue) !important;
+}
+
+
+.bg-blue {
+    background-color: var(--blue) !important;
+}
+
+.bg-indigo {
+    background-color: var(--indigo) !important;
+}
+
+.bg-purple {
+    background-color: var(--purple) !important;
+}
+
+.bg-pink {
+    background-color: var(--pink) !important;
+}
+
+.bg-red {
+    background-color: var(--red) !important;
+}
+
+.bg-orange {
+    background-color: var(--orange) !important;
+}
+
+.bg-yellow {
+    background-color: var(--yellow) !important;
+}
+
+.bg-green {
+    background-color: var(--green) !important;
+}
+
+.bg-teal {
+    background-color: var(--teal) !important;
+}
+
+.bg-cyan {
+    background-color: var(--cyan) !important;
+}
+
+.bg-dodgerblue {
+    background-color: var(--dodgerblue) !important;
+}
+
+
+.border-blue {
+    border-color: var(--blue) !important;
+}
+
+.border-indigo {
+    border-color: var(--indigo) !important;
+}
+
+.border-purple {
+    border-color: var(--purple) !important;
+}
+
+.border-pink {
+    border-color: var(--pink) !important;
+}
+
+.border-red {
+    border-color: var(--red) !important;
+}
+
+.border-orange {
+    border-color: var(--orange) !important;
+}
+
+.border-yellow {
+    border-color: var(--yellow) !important;
+}
+
+.border-green {
+    border-color: var(--green) !important;
+}
+
+.border-teal {
+    border-color: var(--teal) !important;
+}
+
+.border-cyan {
+    border-color: var(--cyan) !important;
+}
+
+.border-dodgerblue {
+    border-color: var(--dodgerblue) !important;
+}
+
+.content-fit {
+    white-space: nowrap;
+    width: 1%;
+}
+
+.content-min {
+   
+    min-width: 27%;
+}
+
+.custom-card-height {
+    min-height: 250px;
+}
+
+.scroll-to-top {
+    z-index: 9999999999;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+   
+    bottom: 100px;
+    display: none;
+   
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, 0.5);
+    line-height: 46px;
+}
+
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+    color: white;
+}
+
+.scroll-to-top:hover {
+    background: rgba(31, 53, 103, 1.00);
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}
+
+.no-arrow::after {
+    content: none;
+}
+
+
+.btn-blue {
+    background-color: var(--blue) !important;
+    color: white;
+}
+
+.btn-indigo {
+    background-color: var(--indigo) !important;
+    color: white;
+}
+
+.btn-purple {
+    background-color: var(--purple) !important;
+    color: white;
+}
+
+.btn-pink {
+    background-color: var(--pink) !important;
+    color: white;
+}
+
+.btn-red {
+    background-color: var(--red) !important;
+    color: white;
+}
+
+.btn-orange {
+    background-color: var(--orange) !important;
+    color: white;
+}
+
+.btn-yellow {
+    background-color: var(--yellow) !important;
+    color: white;
+}
+
+.btn-green {
+    background-color: var(--green) !important;
+    color: white;
+}
+
+.btn-teal {
+    background-color: var(--teal) !important;
+    color: white;
+}
+
+.btn-cyan {
+    background-color: var(--cyan) !important;
+    color: white;
+}
+
+.btn-dodgerblue {
+    background-color: var(--dodgerblue) !important;
+    color: white;
+}
+
+.btn-warning {
+    color: white;
+}
+
+.btn-info {
+    color: white;
+}
+
+
+.btn-blue:hover {
+    color: white;
+}
+
+.btn-indigo:hover {
+    color: white;
+}
+
+.btn-purple:hover {
+    color: white;
+}
+
+.btn-pink:hover {
+    color: white;
+}
+
+.btn-red:hover {
+    color: white;
+}
+
+.btn-orange:hover {
+    color: white;
+}
+
+.btn-yellow:hover {
+    color: white;
+}
+
+.btn-green:hover {
+    color: white;
+}
+
+.btn-teal:hover {
+    color: white;
+}
+
+.btn-cyan:hover {
+    color: white;
+}
+
+.btn-dodgerblue:hover {
+    color: white;
+}
+
+.btn-info:hover {
+    color: white;
+}
+
+.btn-warning:hover {
+    color: white;
+}
+
+
+#example_wrapper {
+    min-height: 758px;
+}
+
+.example_wrapper .example_scroll {
+    height: 100%;
+}
+
+
+#refundDataTable_wrapper {
+    min-height: 758px;
+}
+
+.refundDataTable_wrapper .refundDataTable_scroll {
+    height: 100%;
+}
+
+
+#beneficiaryDataTable_wrapper {
+    min-height: 758px;
+}
+
+.beneficiaryDataTable_wrapper .beneficiaryDataTable_scroll {
+    height: 100%;
+}
+
+
+#userDataTable_wrapper {
+    min-height: 758px;
+}
+
+.userDataTable_wrapper .userDataTable_scroll {
+    height: 100%;
+}
+
+
+#setupTypeDataTable_wrapper {
+    min-height: 750px;
+}
+
+.setupTypeDataTable_wrapper .setupTypeDataTable_scroll {
+    height: 100%;
+}
+
+
+#setupPlanDataTable_wrapper {
+    min-height: 750px;
+}
+
+.setupPlanDataTable_wrapper .setupPlanDataTable_scroll {
+    height: 100%;
+}
+
+.bg-custom {
+    background-color: rgba(31, 53, 103, 1.00) !important;
+}
+
